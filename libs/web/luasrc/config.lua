@@ -6,7 +6,7 @@ Some LuCI configuration values read from uci file "luci"
 
 
 FileId:
-$Id$
+$Id: config.lua 3856 2008-12-05 15:36:44Z Cyrus $
 
 License:
 Copyright 2008 Steven Barth <steven@midlink.org>

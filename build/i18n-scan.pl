@@ -28,6 +28,7 @@ sub dec_tpl_str
 	$s =~ s/[\s\n]+/ /g;
 	$s =~ s/^ //;
 	$s =~ s/ $//;
+	$s =~ s/\\/\\\\/g;
 	return $s;
 }
 
@@ -64,9 +65,13 @@ if( open F, "find @ARGV -type f '(' -name '*.htm' -o -name '*.lua' ')' |" )
 					{
 						( $sub, $code ) = extract_delimited($code, q{'"}, q{\s*(?:\.\.\s*)?});
 
-						if( defined $sub )
+						if( defined $sub && length($sub) > 2 )
 						{
 							$res .= substr $sub, 1, length($sub) - 2;
+						}
+						else
+						{
+							undef $sub;
 						}
 					}
 				}

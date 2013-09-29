@@ -9,7 +9,7 @@ You may obtain a copy of the License at
 
 	http://www.apache.org/licenses/LICENSE-2.0
 
-$Id$
+$Id: netdiscover_devinfo.lua 9051 2012-08-15 14:16:57Z jow $
 ]]--
 
 require("luci.i18n")
@@ -21,7 +21,7 @@ require("luci.controller.luci_diag.devinfo_common")
 
 local debug = false
 
-m = SimpleForm("luci_devinfo", translate("Network Device Scan"), translate("l_d_d_nd_netdiscover_to_devinfo_descr"))
+m = SimpleForm("luci_devinfo", translate("Network Device Scan"), translate("Scans for devices on specified networks."))
 m.reset = false
 m.submit = false
 

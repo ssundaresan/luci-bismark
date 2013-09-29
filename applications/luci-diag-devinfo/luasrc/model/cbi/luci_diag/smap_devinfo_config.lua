@@ -9,7 +9,7 @@ You may obtain a copy of the License at
 
 	http://www.apache.org/licenses/LICENSE-2.0
 
-$Id$
+$Id: smap_devinfo_config.lua 5448 2009-10-31 15:54:11Z jow $
 ]]--
 
 require("luci.controller.luci_diag.devinfo_common")

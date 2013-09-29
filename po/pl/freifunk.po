@@ -1,319 +1,370 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2013-01-18 23:27+0200\n"
+"Last-Translator: obsy <cezary@eko.one.pl>\n"
 "Language-Team: none\n"
-"Language: \n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 2.0.6\n"
 
 msgid "BSSID"
+msgstr "BSSID"
+
+msgid "Bad (ETX > 10)"
 msgstr ""
 
 msgid "Basic Settings"
-msgstr ""
+msgstr "Ustawienia Podstawowe"
 
 msgid "Basic settings"
-msgstr ""
+msgstr "Ustawienia podstawowe"
 
 msgid "Basic settings are incomplete. Please go to"
-msgstr ""
+msgstr "Niekompletne ustawienia podstawowe. Proszę uzupełnić"
 
 msgid "Basic system settings"
-msgstr ""
+msgstr "Podstawowe ustawienia systemu"
 
 msgid "Bitrate"
-msgstr ""
+msgstr "Bitrate"
 
 msgid "Channel"
-msgstr ""
+msgstr "Kanał"
 
 msgid "Check for new firmware versions and perform automatic updates."
-msgstr ""
+msgstr "Automatycznie sprawdź i uaktualnij wersję firmware`u"
 
 msgid "Client network size"
-msgstr ""
+msgstr "Rozmiar sieci klientów"
 
 msgid "Community"
-msgstr ""
+msgstr "Społeczność"
 
 msgid "Community profile"
-msgstr ""
+msgstr "Profil w społeczności"
 
 msgid "Community settings"
-msgstr ""
+msgstr "Ustawienia społeczności"
 
 msgid "Confirm Upgrade"
-msgstr ""
+msgstr "Potwierdź uaktualnienie"
 
 msgid "Contact"
-msgstr ""
+msgstr "Dane kontaktowe"
 
 msgid "Contact information is incomplete. Please go to"
-msgstr ""
+msgstr "Dane kontaktowe są niekompletne. Proszę uzupełnij je"
 
 msgid "Coordinates"
-msgstr ""
+msgstr "Współrzędne"
 
 msgid "Country code"
-msgstr ""
+msgstr "Prefiks kraju"
 
 msgid "Default routes"
-msgstr ""
+msgstr "Domyślne trasy (routes)"
 
 msgid "Disable default content"
-msgstr ""
+msgstr "Wyłącz domyślną zawartość"
 
+# Nie przetłumaczymy tego lepiej.
 msgid "Diversity is enabled for device"
-msgstr ""
+msgstr "Różnorodność jest włączona dla urządzenia"
 
 msgid "E-Mail"
-msgstr ""
+msgstr "E-Mail"
 
 msgid "ESSID"
-msgstr ""
+msgstr "Nazwa sieci (ESSID)"
 
 msgid "Edit index page"
-msgstr ""
+msgstr "Edytuj stronę główną"
+
+msgid "Enable IPv6"
+msgstr "Włącz IPv6"
 
 msgid "Error"
-msgstr ""
+msgstr "Błąd"
 
 msgid "Find your coordinates with OpenStreetMap"
-msgstr ""
+msgstr "Znajdź swoje współrzędne w OpenStreetMap"
 
 msgid "Freifunk"
-msgstr ""
+msgstr "Freifunk"
 
 msgid "Freifunk Overview"
-msgstr ""
+msgstr "Przegląd sieci Freifunk"
 
 msgid "Freifunk Remote Update"
-msgstr ""
+msgstr "Zdalna aktualizacja Freifunk"
 
 msgid "Gateway"
-msgstr ""
+msgstr "Brama"
 
 msgid "Go to"
+msgstr "Przejdź do"
+
+msgid "Good (2 < ETX < 4)"
+msgstr ""
+
+msgid "Green"
 msgstr ""
 
 msgid "Hello and welcome in the network of"
-msgstr ""
+msgstr "Cześć ! Witamy w sieci "
 
 msgid "Hide OpenStreetMap"
-msgstr ""
+msgstr "Ukryj OpenStreetMap"
 
 msgid "Homepage"
-msgstr ""
+msgstr "Strona domowa"
 
 msgid "Hostname"
-msgstr ""
+msgstr "Nazwa hosta"
+
+msgid "IPv6 Config"
+msgstr "Konfiguracja IPv6"
+
+msgid "IPv6 Prefix"
+msgstr "Prefiks IPv6"
+
+msgid "IPv6 network in CIDR notation."
+msgstr "Sieć IPv6 w notacji CIDR"
 
 msgid "If selected then the default content element is not shown."
-msgstr ""
+msgstr "Jeśli zaznaczone domyślna zawartość nie jest widoczna"
 
 msgid "If you are interested in our project then contact the local community"
 msgstr ""
+"Jeśli jesteś zainteresowany projektem kontaktuj się z lokalna społecznością "
+"Freifunk"
 
 msgid "Index Page"
-msgstr ""
+msgstr "Strona początkowa"
 
 msgid "Interface"
-msgstr ""
+msgstr "Interfejs"
 
 msgid ""
 "Internet access depends on technical and organisational conditions and may "
 "or may not work for you."
 msgstr ""
+"Dostęp do internetu zależy od warunków technicznych i organizacyjnych, i "
+"dlatego może nie działać."
 
 msgid "It is operated by"
-msgstr ""
+msgstr "Jest zarządzany przez"
 
 msgid "Keep configuration"
-msgstr ""
+msgstr "Zachowaj konfigurację"
 
 msgid "Latitude"
-msgstr ""
+msgstr "Szerokość"
+
+msgid "Legend"
+msgstr "Legenda"
 
 msgid "Load"
-msgstr ""
+msgstr "Obciążenie"
 
 msgid "Local Time"
-msgstr ""
+msgstr "Czas Lokalny"
 
+# Może ktoś ma lepsze słowo?
 msgid "Location"
-msgstr ""
+msgstr "Lokacja"
 
 msgid "Longitude"
-msgstr ""
+msgstr "Długość"
 
 msgid "Map"
-msgstr ""
+msgstr "Mapa"
 
 msgid "Map Error"
-msgstr ""
+msgstr "Błąd Mapy"
 
 msgid "Memory"
-msgstr ""
+msgstr "Pamięć"
 
+# Dosłownie prefiks kraty
 msgid "Mesh prefix"
-msgstr ""
+msgstr "Prefiks komórki"
 
 msgid "Metric"
-msgstr ""
+msgstr "Metryka"
 
 msgid "Mode"
-msgstr ""
+msgstr "Tryb"
 
 msgid "Network"
-msgstr ""
+msgstr "Sieć"
 
 msgid "Network for client DHCP addresses"
-msgstr ""
+msgstr "Sieć dla adresów klienta DHCP"
 
 msgid "Nickname"
-msgstr ""
+msgstr "Twoja ksywka"
 
 msgid "No default routes known."
-msgstr ""
-
-msgid ""
-"No services can be shown, because olsrd is not running or the olsrd-"
-"nameservice Plugin is not loaded."
-msgstr ""
+msgstr "Nie są znane żadne domyślne ścieżki routingu."
 
 msgid "Notice"
-msgstr ""
+msgstr "Uwaga"
 
 msgid "OLSR"
-msgstr ""
+msgstr "OLSR"
 
 msgid "Operator"
+msgstr "Zarządca"
+
+msgid "Orange"
 msgstr ""
 
 msgid "Overview"
-msgstr ""
+msgstr "Przegląd"
 
 msgid "Package libiwinfo required!"
-msgstr ""
+msgstr "Wymagany pakiet libiwinfo !"
 
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 msgid "Please fill in your contact details below."
-msgstr ""
+msgstr "Proszę uzupełnij dane kontaktowe poniżej."
 
 msgid "Please set your contact information"
-msgstr ""
+msgstr "Proszę uzupełnić swoje dane kontaktowe"
 
 msgid "Power"
-msgstr ""
+msgstr "Moc"
 
 msgid "Processor"
-msgstr ""
+msgstr "Procesor"
 
 msgid "Profile"
-msgstr ""
+msgstr "Profil"
 
 msgid "Profile (Expert)"
-msgstr ""
+msgstr "Profil (tryb eksperta)"
 
 msgid "Realname"
+msgstr "Imię i Nazwisko (prawdziwe)"
+
+msgid "Red"
 msgstr ""
 
 msgid "SSID"
-msgstr ""
+msgstr "SSID"
 
 msgid ""
 "Select your location with a mouse click on the map. The map will only show "
 "up if you are connected to the Internet."
 msgstr ""
-
-msgid "Services"
-msgstr ""
-
-msgid "Show on map"
-msgstr ""
+"Proszę zaznaczyć swoją lokację na mapie. Mapa jest pokazywana tylko jeśli "
+"masz dostęp do internetu."
 
 msgid "Show OpenStreetMap"
-msgstr ""
+msgstr "Pokaż OpenStreetMap"
+
+msgid "Show on map"
+msgstr "Pokaż na mapie"
 
 msgid "Signal"
-msgstr ""
+msgstr "Sygnał"
 
-msgid "Source"
-msgstr ""
+msgid "Splash"
+msgstr "Splash"
 
 msgid "Start Upgrade"
-msgstr ""
+msgstr "Zacznij aktualizację"
 
 msgid "Statistics"
-msgstr ""
+msgstr "Statystyki"
 
 msgid "Status"
+msgstr "Status"
+
+msgid "Still usable (4 < ETX < 10)"
 msgstr ""
 
 msgid "System"
-msgstr ""
+msgstr "System"
 
 msgid "TX"
-msgstr ""
+msgstr "TX"
 
 msgid ""
-"The <em>libiwinfo-lua</em> package is not installed. You must install this "
+"The <em>libiwinfo</em> package is not installed. You must install this "
 "component for working wireless configuration!"
 msgstr ""
+"Pakiet <em>libiwinfo</em> nie jest zainstalowany. Musisz go zainstalować, "
+"aby konfiguracja sieci bezprzewodowej mogła być uaktywniona!"
 
 msgid ""
 "The OLSRd service is not configured to capture position data from the "
 "network.<br /> Please make sure that the nameservice plugin is properly "
 "configured and that the <em>latlon_file</em> option is enabled."
 msgstr ""
+"Usługa OLSRd nie jest skonfigurowana do pozyskiwania nazwy z sieci.<br /> "
+"Proszę się upewnić, że plugin nameservice jest poprawnie skonfigurowany, "
+"oraz opcja użycia pliku <em>latlon_file</em> jest zaznaczona."
 
 msgid "The installed firmware is the most recent version."
-msgstr ""
+msgstr "Zainstalowany firmware jest aktualny."
 
 msgid ""
 "These are the basic settings for your local wireless community. These "
 "settings define the default values for the wizard and DO NOT affect the "
 "actual configuration of the router."
 msgstr ""
+"Są to podstawowe ustawienia dla twojej lokalnej bezprzewodowej społeczności. "
+"Te ustawienia określają domyślne wartości dla kreatora i NIE MAJĄ wpływu na "
+"aktualną konfigurację routera."
 
 msgid "These are the settings of your local community."
-msgstr ""
+msgstr "To są ustawienia twojej lokalnej społeczności (community)."
 
 msgid ""
 "These pages will assist you in setting up your router for Freifunk or "
 "similar wireless community networks."
 msgstr ""
+"Te strony pomogą ci skonfigurować twój router do sieci Freifunk, lub innej "
+"sieci społecznościowej ."
 
 msgid "This is the access point"
-msgstr ""
+msgstr "To jest punk dostępowy (AP)"
 
 msgid "Update Settings"
-msgstr ""
+msgstr "Uaktualnij ustawienia"
 
 msgid "Update available!"
-msgstr ""
+msgstr "Aktualizacja dostępna!!!"
 
 msgid "Uptime"
-msgstr ""
-
-msgid "Url"
-msgstr ""
+msgstr "Aktualizacja"
 
 msgid "Verify downloaded images"
+msgstr "Sprawdź pobrane obrazy"
+
+msgid "Very good (ETX < 2)"
 msgstr ""
 
 msgid ""
 "We are an initiative to establish a free, independent and open wireless mesh "
 "network."
 msgstr ""
+"Jesteśmy inicjatywą na rzecz ustanowienia wolnej, niezależnej i otwartej "
+"bezprzewodowej siatki kratowej."
 
 msgid "Wireless Overview"
+msgstr "Przegląd Ustawień WiFi"
+
+msgid "Yellow"
 msgstr ""
 
 msgid ""
@@ -321,39 +372,45 @@ msgid ""
 "valid XHTML in the form below.<br />Headlines should be enclosed between &lt;"
 "h2&gt; and &lt;/h2&gt;."
 msgstr ""
+"Można wyświetlić dodatkową zawartość na publicznej stronie indeksu "
+"wstawiając poprawny XHTML do formularza poniżej.<br />Nagłówki powinny być "
+"zamknięte tagami &lt;h2&gt; i &lt;/h2&gt;."
 
 msgid ""
 "You can find further information about the global Freifunk initiative at"
 msgstr ""
+"Możesz znaleźć więcej informacji o naszej globalnej inicjatywie Freifunk na"
 
 msgid "You can manually edit the selected community profile here."
-msgstr ""
+msgstr "Możesz ręcznie edytować wybrany profil społeczności tutaj"
 
 msgid ""
 "You need to select a profile before you can edit it. To select a profile go "
 "to"
 msgstr ""
+"Aby edytować profil musisz go najpierw zaznaczyć. Zaznacz profil aby "
+"kontynuować"
 
 msgid "and fill out all required fields."
-msgstr ""
+msgstr "i wypełnij wszystkie wymagane pola."
 
 msgid "buffered"
-msgstr ""
+msgstr "buforowany"
 
 msgid "cached"
-msgstr ""
+msgstr "cachowany"
 
 msgid "e.g."
-msgstr ""
+msgstr "np."
 
 msgid "free"
-msgstr ""
+msgstr "darmowy"
 
 msgid "to disable it."
-msgstr ""
+msgstr "aby wyłączyć"
 
 msgid "used"
-msgstr ""
+msgstr "używany"
 
 msgid "wireless settings"
-msgstr ""
+msgstr "ustawienia sieci bezprzewodowej"

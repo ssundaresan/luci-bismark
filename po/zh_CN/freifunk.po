@@ -3,53 +3,57 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 03:40+0200\n"
-"PO-Revision-Date: 2009-06-26 04:47+0200\n"
-"Last-Translator: ruwen <zhaoruwen@gmail.com>\n"
+"PO-Revision-Date: 2012-09-05 14:48+0200\n"
+"Last-Translator: nKsyn <e.nksyn@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 1.1.0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.6\n"
 
 msgid "BSSID"
+msgstr "BSSID"
+
+msgid "Bad (ETX > 10)"
 msgstr ""
 
 msgid "Basic Settings"
-msgstr ""
+msgstr "基础设置"
 
 msgid "Basic settings"
-msgstr ""
+msgstr "基础设置"
 
 msgid "Basic settings are incomplete. Please go to"
-msgstr ""
+msgstr "基础设置不完整，请转到"
 
 msgid "Basic system settings"
-msgstr ""
+msgstr "基础系统设置"
 
 msgid "Bitrate"
-msgstr ""
+msgstr "速率"
 
 msgid "Channel"
-msgstr ""
+msgstr "频道"
 
 msgid "Check for new firmware versions and perform automatic updates."
-msgstr ""
+msgstr "检查新的固件版本并自动升级。"
 
 msgid "Client network size"
-msgstr ""
+msgstr "客户端网络容量"
 
 msgid "Community"
-msgstr ""
+msgstr "群组"
 
 msgid "Community profile"
-msgstr ""
+msgstr "群组配置文件"
 
 msgid "Community settings"
-msgstr ""
+msgstr "群组设置"
 
 msgid "Confirm Upgrade"
-msgstr ""
+msgstr "确认升级"
 
 msgid "Contact"
 msgstr ""
@@ -61,7 +65,7 @@ msgid "Coordinates"
 msgstr ""
 
 msgid "Country code"
-msgstr ""
+msgstr "国家代码"
 
 msgid "Default routes"
 msgstr ""
@@ -73,12 +77,15 @@ msgid "Diversity is enabled for device"
 msgstr ""
 
 msgid "E-Mail"
-msgstr "Email"
+msgstr ""
 
 msgid "ESSID"
 msgstr ""
 
 msgid "Edit index page"
+msgstr ""
+
+msgid "Enable IPv6"
 msgstr ""
 
 msgid "Error"
@@ -102,6 +109,12 @@ msgstr ""
 msgid "Go to"
 msgstr ""
 
+msgid "Good (2 < ETX < 4)"
+msgstr ""
+
+msgid "Green"
+msgstr ""
+
 msgid "Hello and welcome in the network of"
 msgstr ""
 
@@ -112,7 +125,16 @@ msgid "Homepage"
 msgstr ""
 
 msgid "Hostname"
-msgstr "主机名"
+msgstr ""
+
+msgid "IPv6 Config"
+msgstr ""
+
+msgid "IPv6 Prefix"
+msgstr ""
+
+msgid "IPv6 network in CIDR notation."
+msgstr ""
 
 msgid "If selected then the default content element is not shown."
 msgstr ""
@@ -140,6 +162,9 @@ msgstr ""
 msgid "Latitude"
 msgstr ""
 
+msgid "Legend"
+msgstr ""
+
 msgid "Load"
 msgstr ""
 
@@ -159,7 +184,7 @@ msgid "Map Error"
 msgstr ""
 
 msgid "Memory"
-msgstr "内存"
+msgstr ""
 
 msgid "Mesh prefix"
 msgstr ""
@@ -182,11 +207,6 @@ msgstr ""
 msgid "No default routes known."
 msgstr ""
 
-msgid ""
-"No services can be shown, because olsrd is not running or the olsrd-"
-"nameservice Plugin is not loaded."
-msgstr ""
-
 msgid "Notice"
 msgstr ""
 
@@ -196,6 +216,9 @@ msgstr ""
 msgid "Operator"
 msgstr ""
 
+msgid "Orange"
+msgstr ""
+
 msgid "Overview"
 msgstr ""
 
@@ -203,7 +226,7 @@ msgid "Package libiwinfo required!"
 msgstr ""
 
 msgid "Phone"
-msgstr "电话"
+msgstr ""
 
 msgid "Please fill in your contact details below."
 msgstr ""
@@ -226,6 +249,9 @@ msgstr ""
 msgid "Realname"
 msgstr ""
 
+msgid "Red"
+msgstr ""
+
 msgid "SSID"
 msgstr ""
 
@@ -234,19 +260,16 @@ msgid ""
 "up if you are connected to the Internet."
 msgstr ""
 
-msgid "Services"
+msgid "Show OpenStreetMap"
 msgstr ""
 
 msgid "Show on map"
 msgstr ""
 
-msgid "Show OpenStreetMap"
-msgstr ""
-
 msgid "Signal"
 msgstr ""
 
-msgid "Source"
+msgid "Splash"
 msgstr ""
 
 msgid "Start Upgrade"
@@ -258,6 +281,9 @@ msgstr ""
 msgid "Status"
 msgstr ""
 
+msgid "Still usable (4 < ETX < 10)"
+msgstr ""
+
 msgid "System"
 msgstr ""
 
@@ -265,7 +291,7 @@ msgid "TX"
 msgstr ""
 
 msgid ""
-"The <em>libiwinfo-lua</em> package is not installed. You must install this "
+"The <em>libiwinfo</em> package is not installed. You must install this "
 "component for working wireless configuration!"
 msgstr ""
 
@@ -304,10 +330,10 @@ msgstr ""
 msgid "Uptime"
 msgstr ""
 
-msgid "Url"
+msgid "Verify downloaded images"
 msgstr ""
 
-msgid "Verify downloaded images"
+msgid "Very good (ETX < 2)"
 msgstr ""
 
 msgid ""
@@ -316,6 +342,9 @@ msgid ""
 msgstr ""
 
 msgid "Wireless Overview"
+msgstr ""
+
+msgid "Yellow"
 msgstr ""
 
 msgid ""

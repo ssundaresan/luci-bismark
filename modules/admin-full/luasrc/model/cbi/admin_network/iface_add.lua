@@ -9,7 +9,7 @@ You may obtain a copy of the License at
 
 	http://www.apache.org/licenses/LICENSE-2.0
 
-$Id$
+$Id: iface_add.lua 9655 2013-01-27 18:43:41Z jow $
 
 ]]--
 
@@ -36,16 +36,14 @@ newproto = m:field(ListValue, "_netproto", translate("Protocol of the new interf
 netbridge = m:field(Flag, "_bridge", translate("Create a bridge over multiple interfaces"))
 
 
-sifname = m:field(Value, "_ifname", translate("Cover the following interface"),
-	translate("Note: If you choose an interface here which is part of another network, it will be moved into this network."))
+sifname = m:field(Value, "_ifname", translate("Cover the following interface"))
 
 sifname.widget = "radio"
 sifname.template  = "cbi/network_ifacelist"
 sifname.nobridges = true
 
 
-mifname = m:field(Value, "_ifnames", translate("Cover the following interfaces"),
-	translate("Note: If you choose an interface here which is part of another network, it will be moved into this network."))
+mifname = m:field(Value, "_ifnames", translate("Cover the following interfaces"))
 
 mifname.widget = "checkbox"
 mifname.template  = "cbi/network_ifacelist"

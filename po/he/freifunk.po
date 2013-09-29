@@ -1,55 +1,60 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2012-09-13 00:42+0200\n"
+"Last-Translator: Snoof <sagim9@gmail.com>\n"
 "Language-Team: none\n"
-"Language: \n"
+"Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.6\n"
 
 msgid "BSSID"
+msgstr "BSSID"
+
+msgid "Bad (ETX > 10)"
 msgstr ""
 
 msgid "Basic Settings"
-msgstr ""
+msgstr "הגדרות בסיס"
 
 msgid "Basic settings"
-msgstr ""
+msgstr "הגדרות בסיס"
 
 msgid "Basic settings are incomplete. Please go to"
-msgstr ""
+msgstr "לא סיימת להגדיר את הגדרות הבסיס. תחזור ל"
 
 msgid "Basic system settings"
-msgstr ""
+msgstr "הגדרות מערכת"
 
 msgid "Bitrate"
 msgstr ""
 
 msgid "Channel"
-msgstr ""
+msgstr "ערוץ"
 
 msgid "Check for new firmware versions and perform automatic updates."
-msgstr ""
+msgstr "בדוק אם קיים גרסת חומרה חדשה ובצע עדכון אוטומטי"
 
 msgid "Client network size"
-msgstr ""
+msgstr "גודל הרשת"
 
 msgid "Community"
-msgstr ""
+msgstr "קהילה"
 
 msgid "Community profile"
-msgstr ""
+msgstr "פרופיל הקהילה"
 
 msgid "Community settings"
-msgstr ""
+msgstr "הגדרות קהילה"
 
 msgid "Confirm Upgrade"
-msgstr ""
+msgstr "אשר שדרוג"
 
 msgid "Contact"
-msgstr ""
+msgstr "צור קשר"
 
 msgid "Contact information is incomplete. Please go to"
 msgstr ""
@@ -58,7 +63,7 @@ msgid "Coordinates"
 msgstr ""
 
 msgid "Country code"
-msgstr ""
+msgstr "קוד מדינה"
 
 msgid "Default routes"
 msgstr ""
@@ -70,58 +75,76 @@ msgid "Diversity is enabled for device"
 msgstr ""
 
 msgid "E-Mail"
-msgstr ""
+msgstr "אימייל"
 
 msgid "ESSID"
-msgstr ""
+msgstr "ESSID"
 
 msgid "Edit index page"
+msgstr "ערוך דף אינדקס"
+
+msgid "Enable IPv6"
 msgstr ""
 
 msgid "Error"
-msgstr ""
+msgstr "שגיאה"
 
 msgid "Find your coordinates with OpenStreetMap"
-msgstr ""
+msgstr "מצא את המיקום שלך עם OpenStreetMap"
 
 msgid "Freifunk"
-msgstr ""
+msgstr "אריג"
 
 msgid "Freifunk Overview"
-msgstr ""
+msgstr "סקירה כללית על אריג"
 
 msgid "Freifunk Remote Update"
 msgstr ""
 
 msgid "Gateway"
-msgstr ""
+msgstr "שער"
 
 msgid "Go to"
+msgstr "עבור אל"
+
+msgid "Good (2 < ETX < 4)"
+msgstr ""
+
+msgid "Green"
 msgstr ""
 
 msgid "Hello and welcome in the network of"
-msgstr ""
+msgstr "שלום וברוך הבא לרשת של"
 
 msgid "Hide OpenStreetMap"
-msgstr ""
+msgstr "הסתר OpenStreetMap"
 
 msgid "Homepage"
-msgstr ""
+msgstr "דף הבית"
 
 msgid "Hostname"
 msgstr ""
 
-msgid "If selected then the default content element is not shown."
+msgid "IPv6 Config"
 msgstr ""
 
-msgid "If you are interested in our project then contact the local community"
+msgid "IPv6 Prefix"
 msgstr ""
+
+msgid "IPv6 network in CIDR notation."
+msgstr ""
+
+msgid "If selected then the default content element is not shown."
+msgstr "אם מסומן, תוכן ברירת המחדל לא יופיע"
+
+msgid "If you are interested in our project then contact the local community"
+msgstr "אם הנכם מעוניינים בפרוייקט שלנו אנא צרו קשר עם הקהילה באזורכם"
 
 msgid "Index Page"
 msgstr ""
 
 msgid "Interface"
-msgstr ""
+msgstr "ממשק"
 
 msgid ""
 "Internet access depends on technical and organisational conditions and may "
@@ -129,34 +152,37 @@ msgid ""
 msgstr ""
 
 msgid "It is operated by"
-msgstr ""
+msgstr "זה מופעל ע\"י"
 
 msgid "Keep configuration"
-msgstr ""
+msgstr "שמור הגדרות"
 
 msgid "Latitude"
+msgstr "רוחב"
+
+msgid "Legend"
 msgstr ""
 
 msgid "Load"
 msgstr ""
 
 msgid "Local Time"
-msgstr ""
+msgstr "זמן מקומי"
 
 msgid "Location"
-msgstr ""
+msgstr "מיקום"
 
 msgid "Longitude"
-msgstr ""
+msgstr "אורך"
 
 msgid "Map"
-msgstr ""
+msgstr "מפה"
 
 msgid "Map Error"
-msgstr ""
+msgstr "שגיאת מפה"
 
 msgid "Memory"
-msgstr ""
+msgstr "זכרון"
 
 msgid "Mesh prefix"
 msgstr ""
@@ -165,23 +191,18 @@ msgid "Metric"
 msgstr ""
 
 msgid "Mode"
-msgstr ""
+msgstr "מצב"
 
 msgid "Network"
-msgstr ""
+msgstr "רשת"
 
 msgid "Network for client DHCP addresses"
 msgstr ""
 
 msgid "Nickname"
-msgstr ""
+msgstr "כינוי"
 
 msgid "No default routes known."
-msgstr ""
-
-msgid ""
-"No services can be shown, because olsrd is not running or the olsrd-"
-"nameservice Plugin is not loaded."
 msgstr ""
 
 msgid "Notice"
@@ -193,8 +214,11 @@ msgstr ""
 msgid "Operator"
 msgstr ""
 
-msgid "Overview"
+msgid "Orange"
 msgstr ""
+
+msgid "Overview"
+msgstr "סקירה"
 
 msgid "Package libiwinfo required!"
 msgstr ""
@@ -223,6 +247,9 @@ msgstr ""
 msgid "Realname"
 msgstr ""
 
+msgid "Red"
+msgstr ""
+
 msgid "SSID"
 msgstr ""
 
@@ -231,19 +258,16 @@ msgid ""
 "up if you are connected to the Internet."
 msgstr ""
 
-msgid "Services"
+msgid "Show OpenStreetMap"
 msgstr ""
 
 msgid "Show on map"
 msgstr ""
 
-msgid "Show OpenStreetMap"
-msgstr ""
-
 msgid "Signal"
 msgstr ""
 
-msgid "Source"
+msgid "Splash"
 msgstr ""
 
 msgid "Start Upgrade"
@@ -255,6 +279,9 @@ msgstr ""
 msgid "Status"
 msgstr ""
 
+msgid "Still usable (4 < ETX < 10)"
+msgstr ""
+
 msgid "System"
 msgstr ""
 
@@ -262,7 +289,7 @@ msgid "TX"
 msgstr ""
 
 msgid ""
-"The <em>libiwinfo-lua</em> package is not installed. You must install this "
+"The <em>libiwinfo</em> package is not installed. You must install this "
 "component for working wireless configuration!"
 msgstr ""
 
@@ -301,10 +328,10 @@ msgstr ""
 msgid "Uptime"
 msgstr ""
 
-msgid "Url"
+msgid "Verify downloaded images"
 msgstr ""
 
-msgid "Verify downloaded images"
+msgid "Very good (ETX < 2)"
 msgstr ""
 
 msgid ""
@@ -313,6 +340,9 @@ msgid ""
 msgstr ""
 
 msgid "Wireless Overview"
+msgstr ""
+
+msgid "Yellow"
 msgstr ""
 
 msgid ""

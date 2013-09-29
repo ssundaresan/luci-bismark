@@ -20,7 +20,7 @@ limitations under the License.
 local netmod = luci.model.network
 
 local _, p
-for _, p in ipairs({"ppp", "pptp", "pppoe", "pppoa", "3g"}) do
+for _, p in ipairs({"ppp", "pptp", "pppoe", "pppoa", "3g", "l2tp"}) do
 
 	local proto = netmod:register_protocol(p)
 
@@ -35,6 +35,8 @@ for _, p in ipairs({"ppp", "pptp", "pppoe", "pppoa", "3g"}) do
 			return luci.i18n.translate("PPPoE")
 		elseif p == "pppoa" then
 			return luci.i18n.translate("PPPoATM")
+		elseif p == "l2tp" then
+			return luci.i18n.translate("L2TP")
 		end
 	end
 
@@ -43,19 +45,35 @@ for _, p in ipairs({"ppp", "pptp", "pppoe", "pppoa", "3g"}) do
 	end
 
 	function proto.opkg_package(self)
-		if p == "ppp" or p == "pptp" then
+		if p == "ppp" then
 			return p
 		elseif p == "3g" then
 			return "comgt"
+		elseif p == "pptp" then
+			return "ppp-mod-pptp"
 		elseif p == "pppoe" then
 			return "ppp-mod-pppoe"
 		elseif p == "pppoa" then
 			return "ppp-mod-pppoa"
+		elseif p == "l2tp" then
+			return "xl2tpd"
 		end
 	end
 
 	function proto.is_installed(self)
-		return nixio.fs.access("/lib/network/" .. p .. ".sh")
+		if p == "pppoa" then
+			return (nixio.fs.glob("/usr/lib/pppd/*/pppoatm.so")() ~= nil)
+		elseif p == "pppoe" then
+			return (nixio.fs.glob("/usr/lib/pppd/*/rp-pppoe.so")() ~= nil)
+		elseif p == "pptp" then
+			return (nixio.fs.glob("/usr/lib/pppd/*/pptp.so")() ~= nil)
+		elseif p == "3g" then
+			return nixio.fs.access("/lib/netifd/proto/3g.sh")
+		elseif p == "l2tp" then
+			return nixio.fs.access("/lib/netifd/proto/l2tp.sh")
+		else
+			return nixio.fs.access("/lib/netifd/proto/ppp.sh")
+		end
 	end
 
 	function proto.is_floating(self)

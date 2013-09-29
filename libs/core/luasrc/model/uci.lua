@@ -5,7 +5,7 @@ Description:
 Generalized UCI model
 
 FileId:
-$Id$
+$Id: uci.lua 8127 2011-12-20 19:02:14Z jow $
 
 License:
 Copyright 2008 Steven Barth <steven@midlink.org>

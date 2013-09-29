@@ -10,7 +10,7 @@ You may obtain a copy of the License at
 
 	http://www.apache.org/licenses/LICENSE-2.0
 
-$Id$
+$Id: network.lua 5948 2010-03-27 14:54:06Z jow $
 ]]--
 
 local wa  = require "luci.tools.webadmin"

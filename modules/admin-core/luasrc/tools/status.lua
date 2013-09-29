@@ -9,14 +9,13 @@ You may obtain a copy of the License at
 
 	http://www.apache.org/licenses/LICENSE-2.0
 
-$Id$
 ]]--
 
 module("luci.tools.status", package.seeall)
 
 local uci = require "luci.model.uci".cursor()
 
-function dhcp_leases()
+local function dhcp_leases_common(family)
 	local rv = { }
 	local nfs = require "nixio.fs"
 	local leasefile = "/var/dhcp.leases"
@@ -36,14 +35,23 @@ function dhcp_leases()
 			if not ln then
 				break
 			else
-				local ts, mac, ip, name = ln:match("^(%d+) (%S+) (%S+) (%S+)")
-				if ts and mac and ip and name then
-					rv[#rv+1] = {
-						expires  = os.difftime(tonumber(ts) or 0, os.time()),
-						macaddr  = mac,
-						ipaddr   = ip,
-						hostname = (name ~= "*") and name
-					}
+				local ts, mac, ip, name, duid = ln:match("^(%d+) (%S+) (%S+) (%S+) (%S+)")
+				if ts and mac and ip and name and duid then
+					if family == 4 and not ip:match(":") then
+						rv[#rv+1] = {
+							expires  = os.difftime(tonumber(ts) or 0, os.time()),
+							macaddr  = mac,
+							ipaddr   = ip,
+							hostname = (name ~= "*") and name
+						}
+					elseif family == 6 and ip:match(":") then
+						rv[#rv+1] = {
+							expires  = os.difftime(tonumber(ts) or 0, os.time()),
+							ip6addr  = ip,
+							duid     = (duid ~= "*") and duid,
+							hostname = (name ~= "*") and name
+						}
+					end
 				end
 			end
 		end
@@ -51,6 +59,42 @@ function dhcp_leases()
 	end
 
 	return rv
+end
+
+function dhcp_leases()
+	return dhcp_leases_common(4)
+end
+
+function dhcp6_leases()
+	local nfs = require "nixio.fs"
+	local leasefile = "/tmp/hosts/6relayd"
+	local rv = {}
+
+	if nfs.access(leasefile, "r") then
+		local fd = io.open(leasefile, "r")
+		if fd then
+			while true do
+				local ln = fd:read("*l")
+				if not ln then
+					break
+				else
+					local iface, duid, iaid, name, ts, id, length, ip = ln:match("^# (%S+) (%S+) (%S+) (%S+) (%d+) (%S+) (%S+) (.*)")
+					if ip then
+						rv[#rv+1] = {
+							expires  = os.difftime(tonumber(ts) or 0, os.time()),
+							duid     = duid,
+							ip6addr  = ip,
+							hostname = (name ~= "-") and name
+						}
+					end
+				end
+			end
+			fd:close()
+		end
+		return rv
+	elseif luci.sys.call("dnsmasq --version 2>/dev/null | grep -q ' DHCPv6 '") == 0 then
+		return dhcp_leases_common(6)
+	end
 end
 
 function wifi_networks()
@@ -131,4 +175,42 @@ function wifi_network(id)
 		end
 	end
 	return { }
+end
+
+function switch_status(devs)
+	local dev
+	local switches = { }
+	for dev in devs:gmatch("[^%s,]+") do
+		local ports = { }
+		local swc = io.popen("swconfig dev %q show" % dev, "r")
+		if swc then
+			local l
+			repeat
+				l = swc:read("*l")
+				if l then
+					local port, up = l:match("port:(%d+) link:(%w+)")
+					if port then
+						local speed  = l:match(" speed:(%d+)")
+						local duplex = l:match(" (%w+)-duplex")
+						local txflow = l:match(" (txflow)")
+						local rxflow = l:match(" (rxflow)")
+						local auto   = l:match(" (auto)")
+
+						ports[#ports+1] = {
+							port   = tonumber(port) or 0,
+							speed  = tonumber(speed) or 0,
+							link   = (up == "up"),
+							duplex = (duplex == "full"),
+							rxflow = (not not rxflow),
+							txflow = (not not txflow),
+							auto   = (not not auto)
+						}
+					end
+				end
+			until not l
+			swc:close()
+		end
+		switches[dev] = ports
+	end
+	return switches
 end

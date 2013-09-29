@@ -14,5 +14,5 @@ msgstr ""
 msgid "Phones"
 msgstr "Telefone"
 
-msgid "l_v_adminphones"
+msgid "Voice"
 msgstr ""

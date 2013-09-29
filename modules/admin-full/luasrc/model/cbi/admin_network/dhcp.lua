@@ -9,7 +9,7 @@ You may obtain a copy of the License at
 
 	http://www.apache.org/licenses/LICENSE-2.0
 
-$Id$
+$Id: dhcp.lua 9623 2013-01-18 14:08:37Z jow $
 ]]--
 
 local sys = require "luci.sys"
@@ -178,7 +178,7 @@ lm.placeholder = translate("unlimited")
 
 em = s:taboption("advanced", Value, "ednspacket_max",
 	translate("<abbr title=\"maximal\">Max.</abbr> <abbr title=\"Extension Mechanisms for " ..
-		"Domain Name System\">EDNS0</abbr> paket size"),
+		"Domain Name System\">EDNS0</abbr> packet size"),
 	translate("Maximum allowed size of EDNS.0 UDP packets"))
 
 em.optional = true
@@ -236,6 +236,7 @@ name.rmempty  = true
 
 mac = s:option(Value, "mac", translate("<abbr title=\"Media Access Control\">MAC</abbr>-Address"))
 mac.datatype = "list(macaddr)"
+mac.rmempty  = true
 
 ip = s:option(Value, "ip", translate("<abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Address"))
 ip.datatype = "ip4addr"
@@ -247,6 +248,15 @@ sys.net.arptable(function(entry)
 		entry["HW address"] .. " (" .. entry["IP address"] .. ")"
 	)
 end)
+
+function ip.validate(self, value, section)
+	local m = mac:formvalue(section) or ""
+	local n = name:formvalue(section) or ""
+	if value and #n == 0 and #m == 0 then
+		return nil, translate("One of hostname or mac address must be specified!")
+	end
+	return Value.validate(self, value, section)
+end
 
 
 return m

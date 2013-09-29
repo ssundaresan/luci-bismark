@@ -10,7 +10,7 @@ You may obtain a copy of the License at
 
 	http://www.apache.org/licenses/LICENSE-2.0
 
-$Id$
+$Id: olsrd.lua 7745 2011-10-17 22:37:30Z jow $
 ]]--
 
 require("luci.tools.webadmin")

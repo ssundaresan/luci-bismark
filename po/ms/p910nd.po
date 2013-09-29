@@ -35,6 +35,3 @@ msgstr ""
 
 msgid "p910nd - Printer server"
 msgstr ""
-
-msgid "port_help"
-msgstr ""

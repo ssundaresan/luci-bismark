@@ -8,7 +8,6 @@ function index()
 	local page  = node("admin", "status", "olsr")
 	page.target = template("status-olsr/overview")
 	page.title  = _("OLSR")
-	page.i18n   = "olsr"
 	page.subindex = true
 
 	local page  = node("admin", "status", "olsr", "neighbors")
@@ -51,7 +50,6 @@ function index()
 		{"admin", "services", "olsrd"},
 		cbi("olsr/olsrd"), "OLSR"
 	)
-	ol.i18n = "olsr"
 	ol.subindex = true
 
 	entry(
@@ -74,7 +72,6 @@ function index()
 		cbi("olsr/olsrddisplay"), _("Display")
 		)
 
-	oplg.i18n = "olsr"
 	oplg.leaf = true
 	oplg.subindex = true
 
@@ -91,7 +88,21 @@ function index()
 	)
 end
 
-function action_neigh()
+local function compare_links(a, b)
+	local c = tonumber(a.Cost)
+	local d = tonumber(b.Cost)
+
+	if not c or c == 0 then
+		return false
+	end
+
+	if not d or d == 0 then
+		return true
+	end
+	return c < d
+end
+
+function action_neigh(json)
 	local data = fetch_txtinfo("links")
 
 	if not data or not data.Links then
@@ -99,22 +110,7 @@ function action_neigh()
 		return nil
 	end
 
-	local function compare(a, b)
-		local c = tonumber(a.Cost)
-		local d = tonumber(b.Cost)
-
-		if not c or c == 0 then
-			return false
-		end
-
-		if not d or d == 0 then
-			return true
-		end
-
-		return c < d
-	end
-
-	table.sort(data.Links, compare)
+	table.sort(data.Links, compare_links)
 
 	luci.template.render("status-olsr/neighbors", {links=data.Links})
 end
@@ -337,8 +333,9 @@ function fetch_txtinfo(otable)
 						data[name][di]['Local Device'] = fields[k]
 						uci:foreach("network", "interface",
 						function(s)
-							local localip = string.gsub(fields[k], '	', '')
+							local localip = string.gsub(fields[k], '	', ''):upper()
 							if s.ip6addr then
+								s.ip6addr = luci.ip.IPv6(s.ip6addr):string()
 								local ip6addr = string.gsub(s.ip6addr, '\/.*', '')
 								if ip6addr == localip then
 									data[name][di]['Local Device'] = s['.name'] or s.interface

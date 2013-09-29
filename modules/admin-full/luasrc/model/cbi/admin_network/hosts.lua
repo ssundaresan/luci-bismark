@@ -10,7 +10,7 @@ You may obtain a copy of the License at
 
 	http://www.apache.org/licenses/LICENSE-2.0
 
-$Id$
+$Id: hosts.lua 9558 2012-12-18 13:58:22Z jow $
 ]]--
 
 require("luci.sys")
@@ -30,7 +30,8 @@ ip = s:option(Value, "ip", translate("IP address"))
 ip.datatype = "ipaddr"
 ip.rmempty  = true
 
-for i, dataset in ipairs(luci.sys.net.arptable()) do
+local arptable = luci.sys.net.arptable() or {}
+for i, dataset in ipairs(arptable) do
 	ip:value(
 		dataset["IP address"],
 		"%s (%s)" %{ dataset["IP address"], dataset["HW address"] }

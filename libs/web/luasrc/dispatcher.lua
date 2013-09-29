@@ -5,7 +5,7 @@ Description:
 The request dispatcher and module dispatcher generators
 
 FileId:
-$Id$
+$Id: dispatcher.lua 9018 2012-08-14 15:31:26Z jow $
 
 License:
 Copyright 2008 Steven Barth <steven@midlink.org>
@@ -304,6 +304,7 @@ function dispatch(request)
 		   write       = luci.http.write;
 		   include     = function(name) tpl.Template(name):render(getfenv(2)) end;
 		   translate   = i18n.translate;
+		   translatef  = i18n.translatef;
 		   export      = function(k, v) if tpl.context.viewns[k] == nil then tpl.context.viewns[k] = v end end;
 		   striptags   = util.striptags;
 		   pcdata      = util.pcdata;
@@ -352,9 +353,6 @@ function dispatch(request)
 		local user
 
 		if sdat then
-			sdat = loadstring(sdat)
-			setfenv(sdat, {})
-			sdat = sdat()
 			if not verifytoken or ctx.urltoken.stok == sdat.token then
 				user = sdat.user
 			end
@@ -376,11 +374,12 @@ function dispatch(request)
 					local sid = sess or luci.sys.uniqueid(16)
 					if not sess then
 						local token = luci.sys.uniqueid(16)
-						sauth.write(sid, util.get_bytecode({
+						sauth.reap()
+						sauth.write(sid, {
 							user=user,
 							token=token,
 							secret=luci.sys.uniqueid(16)
-						}))
+						})
 						ctx.urltoken.stok = token
 					end
 					luci.http.header("Set-Cookie", "sysauth=" .. sid.."; path="..build_url())

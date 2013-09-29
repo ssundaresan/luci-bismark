@@ -13,38 +13,41 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.0.4\n"
 
-msgid "Time Synchronisation"
-msgstr "Sincronização de Horário"
-
-msgid "Synchronizes the system time"
-msgstr "Sincroniza a hora do sistema"
-
-msgid "General"
-msgstr "Geral"
-
-msgid "Current system time"
-msgstr "Hora atual do sistema"
-
-msgid "Update interval (in seconds)"
-msgstr "Intervalo de atualização (em segundos)"
+msgid "Clock Adjustment"
+msgstr "Ajuste do Relógio"
 
 msgid "Count of time measurements"
 msgstr "Quantidade de medições do tempo"
 
-msgid "empty = infinite"
-msgstr "vazio = infinito"
+msgid "Current system time"
+msgstr "Hora atual do sistema"
 
-msgid "Clock Adjustment"
-msgstr "Ajuste do Relógio"
-
-msgid "Offset frequency"
-msgstr "Frequência da compensação"
-
-msgid "Time Servers"
-msgstr "Servidores de Hora"
+msgid "General"
+msgstr "Geral"
 
 msgid "Hostname"
 msgstr "Nome do computador"
 
+msgid "Offset frequency"
+msgstr "Frequência da compensação"
+
 msgid "Port"
 msgstr "Porta"
+
+msgid "Synchronizes the system time"
+msgstr "Sincroniza a hora do sistema"
+
+msgid "Time Server"
+msgstr "Servidor de Hora."
+
+msgid "Time Servers"
+msgstr "Servidores de Hora"
+
+msgid "Time Synchronisation"
+msgstr "Sincronização de Horário"
+
+msgid "Update interval (in seconds)"
+msgstr "Intervalo de atualização (em segundos)"
+
+msgid "empty = infinite"
+msgstr "vazio = infinito"

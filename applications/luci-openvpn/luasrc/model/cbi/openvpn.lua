@@ -9,7 +9,7 @@ You may obtain a copy of the License at
 
 	http://www.apache.org/licenses/LICENSE-2.0
 
-$Id$
+$Id: openvpn.lua 8880 2012-07-09 06:25:04Z soma $
 ]]--
 
 local fs  = require "nixio.fs"
@@ -70,7 +70,7 @@ function s.create(self, name)
 end
 
 
-s:option( Flag, "enable", translate("Enabled") )
+s:option( Flag, "enabled", translate("Enabled") )
 
 local active = s:option( DummyValue, "_active", translate("Started") )
 function active.cfgvalue(self, section)

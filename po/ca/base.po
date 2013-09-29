@@ -3,46 +3,50 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-06-10 03:40+0200\n"
-"PO-Revision-Date: 2009-05-26 20:13+0200\n"
-"Last-Translator: Eduard Duran <iopahopa@gmail.com>\n"
+"PO-Revision-Date: 2012-04-05 19:30+0200\n"
+"Last-Translator: Roger <roger.baig@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Pootle 1.1.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.4\n"
 
 msgid "(%d minute window, %d second interval)"
-msgstr ""
+msgstr "(finestra de %d minut, interval de %d segon)"
 
 msgid "(%s available)"
 msgstr "(%s disponible)"
 
 msgid "(empty)"
-msgstr ""
+msgstr "(buit)"
 
 msgid "(no interfaces attached)"
-msgstr ""
+msgstr "(sense interfícies adjuntes)"
 
 msgid "-- Additional Field --"
 msgstr "-- Camp addicional --"
 
 msgid "-- Please choose --"
-msgstr "-- Escull --"
+msgstr "-- Escull, si et plau --"
 
 msgid "-- custom --"
 msgstr "-- personalitzat --"
 
 msgid "1 Minute Load:"
-msgstr ""
+msgstr "Càrrega d'1 minut:"
 
 msgid "15 Minute Load:"
-msgstr ""
+msgstr "Càrrega de 15 minuts:"
 
+#, fuzzy
 msgid "40MHz 2nd channel above"
-msgstr ""
+msgstr "Canal 2on 40MHz per sobre"
 
+#, fuzzy
 msgid "40MHz 2nd channel below"
-msgstr ""
+msgstr "Canal 2on 40MHz per sota"
 
 msgid "5 Minute Load:"
 msgstr ""
@@ -50,29 +54,18 @@ msgstr ""
 msgid "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
 msgstr "<abbr title=\"Basic Service Set Identifier\">BSSID</abbr>"
 
-msgid ""
-"<abbr title=\"Classless Inter-Domain Routing\">CIDR</abbr>-Notation: address/"
-"prefix"
-msgstr ""
-"Notació <abbr title=\"Classless Inter-Domain Routing\">CIDR</abbr>: adreça/"
-"prefix"
-
 msgid "<abbr title=\"Domain Name System\">DNS</abbr> query port"
-msgstr ""
+msgstr "<abbr title=\"Domain Name System\">DNS</abbr> port de consulta"
 
 msgid "<abbr title=\"Domain Name System\">DNS</abbr> server port"
-msgstr ""
+msgstr "<abbr title=\"Domain Name System\">DNS</abbr> port del servidor"
 
 msgid ""
 "<abbr title=\"Domain Name System\">DNS</abbr> servers will be queried in the "
 "order of the resolvfile"
 msgstr ""
-
-msgid "<abbr title=\"Domain Name System\">DNS</abbr>-Server"
-msgstr "Servidor <abbr title=\"Domain Name System\">DNS</abbr>"
-
-msgid "<abbr title=\"Encrypted\">Encr.</abbr>"
-msgstr "<abbr title=\"Encriptat\">Encr.</abbr>"
+"Els servidors <abbr title=\"Domain Name System\">DNS</abbr> seran consultats "
+"per l'ordre del fitxer de resolució"
 
 msgid "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
@@ -80,18 +73,12 @@ msgstr "<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgid "<abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Address"
 msgstr "Adreça <abbr title=\"Internet Protocol Version 4\">IPv4</abbr>"
 
-msgid "<abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Broadcast"
-msgstr "Broadcast <abbr title=\"Internet Protocol Version 4\">IPv4</abbr>"
-
 msgid "<abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Gateway"
 msgstr "Passarel·la <abbr title=\"Internet Protocol Version 4\">IPv4</abbr>"
 
 msgid "<abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Netmask"
 msgstr ""
 "Màscara de xarxa <abbr title=\"Internet Protocol Version 4\">IPv4</abbr>"
-
-msgid "<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Address"
-msgstr "Adreça <abbr title=\"Internet Protocol Version 6\">IPv6</abbr>"
 
 msgid ""
 "<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Address or Network "
@@ -106,35 +93,39 @@ msgid "<abbr title=\"Light Emitting Diode\">LED</abbr> Configuration"
 msgstr "Configuració <abbr title=\"Light Emitting Diode\">LED</abbr>"
 
 msgid "<abbr title=\"Light Emitting Diode\">LED</abbr> Name"
-msgstr ""
+msgstr "Nom <abbr title=\"Light Emitting Diode\">LED</abbr>"
 
 msgid "<abbr title=\"Media Access Control\">MAC</abbr>-Address"
 msgstr "Adreça <abbr title=\"Media Access Control\">MAC</abbr>"
-
-msgid "<abbr title=\"Wireless Local Area Network\">WLAN</abbr>-Scan"
-msgstr "Escaneig <abbr title=\"Xarxa sense fils d&#39;àrea local\">WLAN</abbr>"
 
 msgid ""
 "<abbr title=\"maximal\">Max.</abbr> <abbr title=\"Dynamic Host Configuration "
 "Protocol\">DHCP</abbr> leases"
 msgstr ""
+"Leases de <abbr title=\"Dynamic Host Configuration Protocol\">DHCP</abbr> "
+"<abbr title=\"maximal\">Max.</abbr>"
 
 msgid ""
 "<abbr title=\"maximal\">Max.</abbr> <abbr title=\"Extension Mechanisms for "
-"Domain Name System\">EDNS0</abbr> paket size"
+"Domain Name System\">EDNS0</abbr> packet size"
 msgstr ""
+"Grandària de paquet <abbr title=\"Extension Mechanisms for Domain Name System"
+"\">EDNS0</abbr> <abbr title=\"maximal\">Max.</abbr>"
 
 msgid "<abbr title=\"maximal\">Max.</abbr> concurrent queries"
+msgstr "Consultes concurrents <abbr title=\"maximal\">Max.</abbr>"
+
+msgid "<abbr title='Pairwise: %s / Group: %s'>%s - %s</abbr>"
 msgstr ""
 
 msgid "APN"
-msgstr ""
+msgstr "APN"
 
 msgid "AR Support"
 msgstr "Suport AR"
 
 msgid "ARP retry threshold"
-msgstr ""
+msgstr "Llindar de reintent ARP"
 
 msgid "ATM Bridges"
 msgstr ""
@@ -170,7 +161,7 @@ msgid "Actions"
 msgstr "Accions"
 
 msgid "Activate this network"
-msgstr ""
+msgstr "Activa aquesta xarxa"
 
 msgid "Active <abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Routes"
 msgstr "Rutes <abbr title=\"Internet Protocol Version 4\">IPv4</abbr> actives"
@@ -181,8 +172,11 @@ msgstr "Rutes <abbr title=\"Internet Protocol Version 6\">IPv6</abbr> actives"
 msgid "Active Connections"
 msgstr "Connexions actives"
 
-msgid "Active Leases"
-msgstr "Leases Actius"
+msgid "Active DHCP Leases"
+msgstr ""
+
+msgid "Active DHCPv6 Leases"
+msgstr ""
 
 msgid "Ad-Hoc"
 msgstr "Ad-Hoc"
@@ -192,33 +186,34 @@ msgstr "Afegeix"
 
 msgid "Add local domain suffix to names served from hosts files"
 msgstr ""
+"Afegeix el sufix de domini local als noms servits des dels fitxers de hosts"
 
 msgid "Add new interface..."
-msgstr ""
+msgstr "Afegeix una interfície nova..."
 
 msgid "Additional Hosts files"
-msgstr ""
+msgstr "Fitxers de Hosts addicionals"
 
 msgid "Address"
-msgstr ""
+msgstr "Adreça"
 
 msgid "Address to access local relay bridge"
-msgstr ""
+msgstr "Adreça per accedir al relay bridge local"
 
 msgid "Administration"
 msgstr "Administració"
 
 msgid "Advanced Settings"
-msgstr ""
+msgstr "Paràmetres avançats"
 
 msgid "Advertise IPv6 on network"
-msgstr ""
+msgstr "Anuncia IPv6 a la xarxa"
 
 msgid "Advertised network ID"
-msgstr ""
+msgstr "ID de xarxa anunciat"
 
 msgid "Alert"
-msgstr ""
+msgstr "Alerta"
 
 msgid "Allow <abbr title=\"Secure Shell\">SSH</abbr> password authentication"
 msgstr ""
@@ -231,32 +226,44 @@ msgid "Allow listed only"
 msgstr "Permet només les llistades"
 
 msgid "Allow localhost"
-msgstr ""
+msgstr "Permetre el localhost"
 
 msgid "Allow remote hosts to connect to local SSH forwarded ports"
 msgstr ""
+"Permetre a màquines remotes de connectar als ports reenviats de l'SSH local"
 
 msgid "Allow root logins with password"
-msgstr ""
+msgstr "Permetre l'accés del l'administrador amb paraula clau"
 
 msgid "Allow the <em>root</em> user to login with password"
-msgstr ""
+msgstr "Permetre l'accés de l'usurari <em>root</em> amb paraula clau"
 
 msgid ""
 "Allow upstream responses in the 127.0.0.0/8 range, e.g. for RBL services"
 msgstr ""
 
 msgid "Allowed range is 1 to 65535"
+msgstr "El rang permès és entre 1 i 65535"
+
+msgid ""
+"Always use 40MHz channels even if the secondary channel overlaps. Using this "
+"option does not comply with IEEE 802.11n-2009!"
 msgstr ""
 
 msgid "An additional network will be created if you leave this unchecked."
-msgstr ""
+msgstr "Es crearà una xarxa addicional si deixes això sense marcar."
 
 msgid "Antenna 1"
-msgstr ""
+msgstr "Antena 1"
 
 msgid "Antenna 2"
+msgstr "Antena 2"
+
+msgid "Antenna Configuration"
 msgstr ""
+
+msgid "Any zone"
+msgstr "Qualsevol zona"
 
 msgid "Apply"
 msgstr "Aplica"
@@ -264,11 +271,17 @@ msgstr "Aplica"
 msgid "Applying changes"
 msgstr "Aplicant els canvis"
 
+msgid "Assign interfaces..."
+msgstr ""
+
 msgid "Associated Stations"
+msgstr "Estacions associades"
+
+msgid "Atheros 802.11%s Wireless Controller"
 msgstr ""
 
 msgid "Authentication"
-msgstr "Autenticació PEAP"
+msgstr "Autenticació"
 
 msgid "Authoritative"
 msgstr "Autoritzada"
@@ -277,32 +290,33 @@ msgid "Authorization Required"
 msgstr "Es requereix autenticació"
 
 msgid "Auto Refresh"
-msgstr ""
+msgstr "Refresc automàtic"
 
 msgid "Available"
 msgstr "Disponible"
 
 msgid "Available packages"
-msgstr ""
+msgstr "Paquets disponibles"
 
 msgid "Average:"
-msgstr ""
+msgstr "Mitjana:"
 
 msgid "BSSID"
-msgstr ""
+msgstr "BSSID"
 
 msgid "Back"
-msgstr ""
+msgstr "Endarrere"
 
 msgid "Back to Overview"
-msgstr ""
+msgstr "Endarrere cap a Resum"
 
 msgid "Back to configuration"
-msgstr ""
+msgstr "Endarrere cap a configuració"
 
 msgid "Back to overview"
-msgstr ""
+msgstr "Endarrere cap a resum"
 
+# Endarrere cap a resultats d'escaneig
 msgid "Back to scan results"
 msgstr ""
 
@@ -310,24 +324,21 @@ msgid "Background Scan"
 msgstr "Escaneig de fons"
 
 msgid "Backup / Flash Firmware"
-msgstr ""
+msgstr "Còpia de seguretat / Recàrrega de programari"
 
 msgid "Backup / Restore"
-msgstr "Fes còpia de seguretat / Restaura"
+msgstr "Còpia de seguretat / Restauració"
 
 msgid "Backup file list"
-msgstr ""
+msgstr "Llista de fitxer de recuperació"
 
 msgid "Bad address specified!"
-msgstr ""
+msgstr "Adreça mal especificada!"
 
 msgid ""
 "Below is the determined list of files to backup. It consists of changed "
 "configuration files marked by opkg, essential base files and the user "
 "defined backup patterns."
-msgstr ""
-
-msgid "Bit Rate"
 msgstr ""
 
 msgid "Bitrate"
@@ -343,19 +354,25 @@ msgid "Bridge interfaces"
 msgstr "Interfície pont"
 
 msgid "Bridge unit number"
-msgstr ""
+msgstr "Nombre d'unitat de pont"
 
 msgid "Bring up on boot"
+msgstr "Aixecar a l'engegada"
+
+msgid "Broadcom 802.11%s Wireless Controller"
+msgstr ""
+
+msgid "Broadcom BCM%04x 802.11 Wireless Controller"
 msgstr ""
 
 msgid "Buffered"
 msgstr ""
 
 msgid "Buttons"
-msgstr ""
+msgstr "Botons"
 
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 msgid "CPU usage (%)"
 msgstr "Ús de CPU (%)"
@@ -376,13 +393,13 @@ msgid "Changes applied."
 msgstr "Canvis aplicats."
 
 msgid "Changes the administrator password for accessing the device"
-msgstr ""
+msgstr "Canvia la paraula clau de l'administrador per accedir al dispositiu"
 
 msgid "Channel"
 msgstr "Canal"
 
 msgid "Check"
-msgstr ""
+msgstr "Comprovació"
 
 msgid "Checksum"
 msgstr "Suma de verificació"
@@ -392,16 +409,15 @@ msgid ""
 "<em>unspecified</em> to remove the interface from the associated zone or "
 "fill out the <em>create</em> field to define a new zone and attach the "
 "interface to it."
-msgstr "Aquesta interfície no pertany a cap zona de tallafocs encara."
+msgstr ""
 
 msgid ""
-"Choose the network you want to attach to this wireless interface. Select "
-"<em>unspecified</em> to not attach any network or fill out the <em>create</"
-"em> field to define a new network."
+"Choose the network(s) you want to attach to this wireless interface or fill "
+"out the <em>create</em> field to define a new network."
 msgstr ""
 
 msgid "Cipher"
-msgstr ""
+msgstr "Xifra"
 
 msgid ""
 "Click \"Generate archive\" to download a tar archive of the current "
@@ -437,15 +453,6 @@ msgstr "Compressió"
 
 msgid "Configuration"
 msgstr "Configuració"
-
-msgid "Configuration / Apply"
-msgstr ""
-
-msgid "Configuration / Changes"
-msgstr ""
-
-msgid "Configuration / Revert"
-msgstr ""
 
 msgid "Configuration applied."
 msgstr ""
@@ -489,9 +496,6 @@ msgstr "Crea / Assigna zona de tallafocs"
 msgid "Create Interface"
 msgstr ""
 
-msgid "Create Network"
-msgstr "Crea Xarxa"
-
 msgid "Create a bridge over multiple interfaces"
 msgstr ""
 
@@ -526,10 +530,16 @@ msgstr ""
 msgid "DHCP-Options"
 msgstr "Opcions de DHCP"
 
+msgid "DHCPv6 Leases"
+msgstr ""
+
 msgid "DNS"
 msgstr ""
 
 msgid "DNS forwardings"
+msgstr ""
+
+msgid "DUID"
 msgstr ""
 
 msgid "Debug"
@@ -709,16 +719,13 @@ msgstr ""
 msgid "Enable Jumbo Frame passthrough"
 msgstr ""
 
+msgid "Enable NTP client"
+msgstr ""
+
 msgid "Enable TFTP server"
 msgstr ""
 
 msgid "Enable VLAN functionality"
-msgstr ""
-
-msgid "Enable buffering"
-msgstr ""
-
-msgid "Enable builtin NTP server"
 msgstr ""
 
 msgid "Enable learning and aging"
@@ -839,6 +846,9 @@ msgstr ""
 msgid "Force"
 msgstr "Força"
 
+msgid "Force 40MHz mode"
+msgstr ""
+
 msgid "Force CCMP (AES)"
 msgstr ""
 
@@ -875,6 +885,12 @@ msgstr ""
 msgid "Frequency Hopping"
 msgstr "Salts de freqüència"
 
+msgid "GHz"
+msgstr ""
+
+msgid "GPRS only"
+msgstr ""
+
 msgid "Gateway"
 msgstr ""
 
@@ -888,6 +904,9 @@ msgid "General Setup"
 msgstr ""
 
 msgid "Generate archive"
+msgstr ""
+
+msgid "Generic 802.11%s Wireless Controller"
 msgstr ""
 
 msgid "Given password confirmation did not match, password not changed!"
@@ -929,6 +948,9 @@ msgid ""
 "authentication."
 msgstr ""
 
+msgid "Hermes 802.11b Wireless Controller"
+msgstr ""
+
 msgid "Hide <abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
 msgstr ""
 "No mostris l'<abbr title=\"Extended Service Set Identifier\">ESSID</abbr>"
@@ -953,9 +975,6 @@ msgstr "Noms de màquina"
 
 msgid "IP address"
 msgstr "Adreça IP"
-
-msgid "IP-Aliases"
-msgstr ""
 
 msgid "IPv4"
 msgstr ""
@@ -984,6 +1003,9 @@ msgstr ""
 msgid "IPv4 only"
 msgstr ""
 
+msgid "IPv4 prefix length"
+msgstr ""
+
 msgid "IPv4-Address"
 msgstr ""
 
@@ -991,9 +1013,6 @@ msgid "IPv6"
 msgstr "IPv6"
 
 msgid "IPv6 Firewall"
-msgstr ""
-
-msgid "IPv6 Setup"
 msgstr ""
 
 msgid "IPv6 WAN Status"
@@ -1008,10 +1027,22 @@ msgstr ""
 msgid "IPv6 only"
 msgstr ""
 
+msgid "IPv6 prefix"
+msgstr ""
+
+msgid "IPv6 prefix length"
+msgstr ""
+
+msgid "IPv6-Address"
+msgstr ""
+
 msgid "IPv6-in-IPv4 (RFC4213)"
 msgstr ""
 
-msgid "IPv6-over-IPv4"
+msgid "IPv6-over-IPv4 (6rd)"
+msgstr ""
+
+msgid "IPv6-over-IPv4 (6to4)"
 msgstr ""
 
 msgid "Identity"
@@ -1115,6 +1146,9 @@ msgstr ""
 msgid "Interfaces"
 msgstr "Interfícies"
 
+msgid "Internal Server Error"
+msgstr ""
+
 msgid "Invalid"
 msgstr "Valor d'entrada invàlid"
 
@@ -1164,6 +1198,12 @@ msgstr ""
 msgid "Kill"
 msgstr "Mata"
 
+msgid "L2TP"
+msgstr ""
+
+msgid "L2TP Server"
+msgstr ""
+
 msgid "LCP echo failure threshold"
 msgstr ""
 
@@ -1205,9 +1245,6 @@ msgstr ""
 
 msgid "Limit"
 msgstr "Límit"
-
-msgid "Link"
-msgstr ""
 
 msgid "Link On"
 msgstr "Enllaç activat"
@@ -1293,12 +1330,6 @@ msgstr "Final de sessió"
 msgid "Lowest leased address as offset from the network address."
 msgstr ""
 
-msgid "MAC"
-msgstr "MAC"
-
-msgid "MAC Address"
-msgstr ""
-
 msgid "MAC-Address"
 msgstr ""
 
@@ -1310,6 +1341,12 @@ msgstr "Filtre MAC"
 
 msgid "MAC-List"
 msgstr "Llista MAC"
+
+msgid "MB/s"
+msgstr ""
+
+msgid "MHz"
+msgstr ""
 
 msgid "MTU"
 msgstr ""
@@ -1333,6 +1370,9 @@ msgid "Maximum hold time"
 msgstr ""
 
 msgid "Maximum number of leased addresses."
+msgstr ""
+
+msgid "Mbit/s"
 msgstr ""
 
 msgid "Memory"
@@ -1439,8 +1479,8 @@ msgstr ""
 msgid "Network boot image"
 msgstr ""
 
-msgid "Networks"
-msgstr "Xarxes"
+msgid "Network without interfaces."
+msgstr ""
 
 msgid "Next »"
 msgstr ""
@@ -1491,18 +1531,22 @@ msgstr ""
 msgid "Normal"
 msgstr ""
 
+msgid "Not Found"
+msgstr ""
+
 msgid "Not associated"
+msgstr ""
+
+msgid "Not connected"
 msgstr ""
 
 msgid "Note: Configuration files will be erased."
 msgstr ""
 
-msgid ""
-"Note: If you choose an interface here which is part of another network, it "
-"will be moved into this network."
+msgid "Notice"
 msgstr ""
 
-msgid "Notice"
+msgid "Nslookup"
 msgstr ""
 
 msgid "OK"
@@ -1532,13 +1576,13 @@ msgstr ""
 msgid "On-State Delay"
 msgstr ""
 
+msgid "One of hostname or mac address must be specified!"
+msgstr ""
+
 msgid "One or more fields contain invalid values!"
 msgstr ""
 
 msgid "One or more required fields have no value!"
-msgstr ""
-
-msgid "Open"
 msgstr ""
 
 msgid "Open list..."
@@ -1669,6 +1713,9 @@ msgstr ""
 msgid "Physical Settings"
 msgstr ""
 
+msgid "Ping"
+msgstr ""
+
 msgid "Pkts."
 msgstr ""
 
@@ -1690,8 +1737,8 @@ msgstr ""
 msgid "Port %d is untagged in multiple VLANs!"
 msgstr ""
 
-msgid "Power"
-msgstr "Potència"
+msgid "Port status:"
+msgstr ""
 
 msgid ""
 "Presume peer to be dead after given amount of LCP echo failures, use 0 to "
@@ -1701,6 +1748,9 @@ msgstr ""
 #, fuzzy
 msgid "Prevents client-to-client communication"
 msgstr "Evita la comunicació Client a Client"
+
+msgid "Prism2/2.5/3 802.11b Wireless Controller"
+msgstr ""
 
 msgid "Proceed"
 msgstr "continua"
@@ -1723,17 +1773,29 @@ msgstr ""
 msgid "Protocol support is not installed"
 msgstr ""
 
+msgid "Provide NTP server"
+msgstr ""
+
 msgid "Provide new network"
 msgstr ""
 
 msgid "Pseudo Ad-Hoc (ahdemo)"
 msgstr "Pseudo Ad-Hoc (ahdemo)"
 
+msgid "Quality"
+msgstr ""
+
 msgid "RTS/CTS Threshold"
 msgstr "Llindar RTS/CTS"
 
 msgid "RX"
 msgstr "RX"
+
+msgid "RX Rate"
+msgstr ""
+
+msgid "RaLink 802.11%s Wireless Controller"
+msgstr ""
 
 msgid "Radius-Accounting-Port"
 msgstr ""
@@ -1761,26 +1823,26 @@ msgstr ""
 "\"Dynamic Host Configuration Protocol\">DHCP</abbr>"
 
 msgid ""
-"Really delete this interface? The deletion cannot be undone!\n"
-"You might lose access to this router if you are connected via this interface."
+"Really delete this interface? The deletion cannot be undone!\\nYou might "
+"lose access to this device if you are connected via this interface."
 msgstr ""
 
 msgid ""
-"Really delete this wireless network? The deletion cannot be undone!\n"
-"You might lose access to this router if you are connected via this network."
+"Really delete this wireless network? The deletion cannot be undone!\\nYou "
+"might lose access to this device if you are connected via this network."
 msgstr ""
 
 msgid "Really reset all changes?"
 msgstr ""
 
 msgid ""
-"Really shutdown interface \"%s\" ?\n"
-"You might lose access to this router if you are connected via this interface."
+"Really shutdown interface \"%s\" ?\\nYou might lose access to this device if "
+"you are connected via this interface."
 msgstr ""
 
 msgid ""
-"Really shutdown network ?\n"
-"You might lose access to this router if you are connected via this interface."
+"Really shutdown network ?\\nYou might lose access to this device if you are "
+"connected via this interface."
 msgstr ""
 
 msgid "Really switch protocol?"
@@ -2028,6 +2090,12 @@ msgstr "Programari"
 msgid "Some fields are invalid, cannot save values!"
 msgstr ""
 
+msgid "Sorry, the object you requested was not found."
+msgstr ""
+
+msgid "Sorry, the server encountered an unexpected error."
+msgstr ""
+
 msgid ""
 "Sorry, there is no sysupgrade support present, a new firmware image must be "
 "flashed manually. Please refer to the OpenWrt wiki for device specific "
@@ -2158,6 +2226,9 @@ msgstr ""
 msgid "TX"
 msgstr "TX"
 
+msgid "TX Rate"
+msgstr ""
+
 msgid "Table"
 msgstr "Taula"
 
@@ -2178,6 +2249,10 @@ msgstr ""
 msgid ""
 "The <em>libiwinfo-lua</em> package is not installed. You must install this "
 "component for working wireless configuration!"
+msgstr ""
+
+msgid ""
+"The IPv6 prefix assigned to the provider, usually ends with <code>::</code>"
 msgstr ""
 
 msgid ""
@@ -2225,19 +2300,21 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The network ports on your router can be combined to several <abbr title="
+"The length of the IPv4 prefix in bits, the remainder is used in the IPv6 "
+"addresses."
+msgstr ""
+
+msgid "The length of the IPv6 prefix in bits"
+msgstr ""
+
+msgid ""
+"The network ports on this device can be combined to several <abbr title="
 "\"Virtual Local Area Network\">VLAN</abbr>s in which computers can "
 "communicate directly with each other. <abbr title=\"Virtual Local Area "
 "Network\">VLAN</abbr>s are often used to separate different network "
 "segments. Often there is by default one Uplink port for a connection to the "
 "next greater network like the internet and other ports for a local network."
 msgstr ""
-"Els ports de xarxa del teu router es poden combinar amb diverses <abbr title="
-"\"Virtual Local Area Network\">VLAN</abbr>s en les que els ordinador es "
-"poden comunicar directament entre ells. Les <abbr title=\"Virtual Local Area "
-"Network\">VLAN</abbr>s es fan servir normalment per separar segments de "
-"xarxa diferents. Normalment, hi ha un port de Pujada per defecte per la "
-"següent xarxa major, com Internet, i altres ports per una xarxa local."
 
 msgid "The selected protocol needs a device assigned"
 msgstr ""
@@ -2285,6 +2362,9 @@ msgstr ""
 msgid ""
 "There is no password set on this router. Please configure a root password to "
 "protect the web interface and enable SSH."
+msgstr ""
+
+msgid "This IPv4 address of the relay"
 msgstr ""
 
 msgid ""
@@ -2357,6 +2437,9 @@ msgstr ""
 msgid "Total Available"
 msgstr ""
 
+msgid "Traceroute"
+msgstr ""
+
 #, fuzzy
 msgid "Traffic"
 msgstr "Tràfic"
@@ -2400,6 +2483,9 @@ msgstr "Tipus"
 msgid "UDP:"
 msgstr ""
 
+msgid "UMTS only"
+msgstr ""
+
 msgid "UMTS/GPRS/EV-DO"
 msgstr ""
 
@@ -2407,6 +2493,9 @@ msgid "USB Device"
 msgstr ""
 
 msgid "UUID"
+msgstr ""
+
+msgid "Unable to dispatch"
 msgstr ""
 
 msgid "Unknown"
@@ -2547,11 +2636,14 @@ msgid ""
 "and ad-hoc mode) to be installed."
 msgstr ""
 
-msgid "Waiting for router..."
+msgid "Waiting for changes to be applied..."
+msgstr ""
+
+msgid "Waiting for command to complete..."
 msgstr ""
 
 msgid "Warning"
-msgstr ""
+msgstr "Alerta"
 
 msgid "Warning: There are unsaved changes that will be lost while rebooting!"
 msgstr ""
@@ -2561,44 +2653,41 @@ msgstr ""
 msgid "Wifi"
 msgstr "Wifi"
 
-msgid "Wifi networks in your local environment"
-msgstr "Xarxes sense fils del teu entorn local"
-
 msgid "Wireless"
-msgstr ""
+msgstr "Sense fils"
 
 msgid "Wireless Adapter"
 msgstr "Adaptador sense fils"
 
 msgid "Wireless Network"
-msgstr ""
+msgstr "Xarxa sense fils"
 
 msgid "Wireless Overview"
-msgstr ""
+msgstr "Resum sense fils"
 
 msgid "Wireless Security"
-msgstr ""
+msgstr "Seguretat sense fils"
 
 msgid "Wireless is disabled or not associated"
-msgstr ""
+msgstr "Sense fils està deshabilitat o sense associar"
 
 msgid "Wireless is restarting..."
-msgstr ""
+msgstr "Sense fils està reiniciant..."
 
 msgid "Wireless network is disabled"
-msgstr ""
+msgstr "La xarxa sense fils està deshabilitada"
 
 msgid "Wireless network is enabled"
-msgstr ""
+msgstr "La xarxa sense fils està habilitada"
 
 msgid "Wireless restarted"
-msgstr ""
+msgstr "Sense fils reinciat"
 
 msgid "Wireless shut down"
-msgstr ""
+msgstr "Sense fils aturat"
 
 msgid "Write received DNS requests to syslog"
-msgstr ""
+msgstr "Escriure les peticions DNS rebudes al syslog"
 
 msgid "XR Support"
 msgstr "Suport XR"
@@ -2606,7 +2695,7 @@ msgstr "Suport XR"
 msgid ""
 "You can enable or disable installed init scripts here. Changes will applied "
 "after a device reboot.<br /><strong>Warning: If you disable essential init "
-"scripts like \"network\", your device might become inaccesable!</strong>"
+"scripts like \"network\", your device might become inaccessible!</strong>"
 msgstr ""
 "Pots activar o desactivar els scripts d'inici instal·lats ací. Els canvis "
 "s'aplicaran després d'arrancar de nou el dispositiu.<br /><strong>Atenció: "
@@ -2616,24 +2705,38 @@ msgstr ""
 msgid ""
 "You must enable Java Script in your browser or LuCI will not work properly."
 msgstr ""
+"Has d'activar el Java Script al teu navegador o LuCI no funcionarà "
+"correctament."
 
 msgid "any"
-msgstr ""
+msgstr "qualsevol"
 
 msgid "auto"
 msgstr "auto"
 
+msgid "baseT"
+msgstr ""
+
 msgid "bridged"
+msgstr "pontejat"
+
+msgid "create:"
 msgstr ""
 
 msgid "creates a bridge over specified interface(s)"
 msgstr "crea un pont entre les interfícies especificades"
 
+msgid "dB"
+msgstr ""
+
+msgid "dBm"
+msgstr ""
+
 msgid "disable"
 msgstr "deshabilita"
 
 msgid "expired"
-msgstr ""
+msgstr "finalitzat"
 
 msgid ""
 "file where given <abbr title=\"Dynamic Host Configuration Protocol\">DHCP</"
@@ -2642,50 +2745,144 @@ msgstr ""
 "fitxer on els leases de <abbr title=\"Dynamic Host Configuration Protocol"
 "\">DHCP</abbr> s'emmagatzemaran"
 
+msgid "forward"
+msgstr "transemès"
+
+msgid "full-duplex"
+msgstr ""
+
+msgid "half-duplex"
+msgstr ""
+
 msgid "help"
+msgstr "ajuda"
+
+msgid "hidden"
 msgstr ""
 
 msgid "if target is a network"
 msgstr "si el destí és una xarxa"
 
+msgid "input"
+msgstr "entrada"
+
+msgid "kB"
+msgstr ""
+
+msgid "kB/s"
+msgstr ""
+
+msgid "kbit/s"
+msgstr ""
+
 msgid "local <abbr title=\"Domain Name System\">DNS</abbr> file"
 msgstr "fitxer <abbr title=\"Domain Name System\">DNS</abbr> local"
 
 msgid "no"
+msgstr "no"
+
+msgid "no link"
 msgstr ""
 
 msgid "none"
 msgstr "cap"
 
 msgid "off"
-msgstr ""
+msgstr "parat"
 
 msgid "on"
+msgstr "engegat"
+
+msgid "open"
 msgstr ""
 
 msgid "routed"
-msgstr ""
+msgstr "encaminat"
 
 msgid "tagged"
+msgstr "marcat"
+
+msgid "unknown"
 msgstr ""
 
 msgid "unlimited"
-msgstr ""
+msgstr "il·limitat"
 
 msgid "unspecified"
-msgstr ""
+msgstr "sense espeficicar"
 
 msgid "unspecified -or- create:"
-msgstr ""
+msgstr "sense espeficicar -o- crear:"
 
 msgid "untagged"
-msgstr ""
+msgstr "sense marcar"
 
 msgid "yes"
-msgstr ""
+msgstr "Sí"
 
 msgid "« Back"
-msgstr ""
+msgstr "« Endarrere"
+
+#~ msgid "Waiting for router..."
+#~ msgstr "Esperant un encaminador..."
+
+#~ msgid "Active Leases"
+#~ msgstr "Leases Actius"
+
+#~ msgid "MAC"
+#~ msgstr "MAC"
+
+#~ msgid "<abbr title=\"Encrypted\">Encr.</abbr>"
+#~ msgstr "<abbr title=\"Encriptat\">Encr.</abbr>"
+
+#~ msgid "<abbr title=\"Wireless Local Area Network\">WLAN</abbr>-Scan"
+#~ msgstr ""
+#~ "Escaneig <abbr title=\"Xarxa sense fils d&#39;àrea local\">WLAN</abbr>"
+
+#~ msgid "Create Network"
+#~ msgstr "Crea Xarxa"
+
+#~ msgid "Networks"
+#~ msgstr "Xarxes"
+
+#~ msgid "Power"
+#~ msgstr "Potència"
+
+#~ msgid "Wifi networks in your local environment"
+#~ msgstr "Xarxes sense fils del teu entorn local"
+
+#~ msgid ""
+#~ "<abbr title=\"Classless Inter-Domain Routing\">CIDR</abbr>-Notation: "
+#~ "address/prefix"
+#~ msgstr ""
+#~ "Notació <abbr title=\"Classless Inter-Domain Routing\">CIDR</abbr>: "
+#~ "adreça/prefix"
+
+#~ msgid "<abbr title=\"Domain Name System\">DNS</abbr>-Server"
+#~ msgstr "Servidor <abbr title=\"Domain Name System\">DNS</abbr>"
+
+#~ msgid "<abbr title=\"Internet Protocol Version 4\">IPv4</abbr>-Broadcast"
+#~ msgstr "Broadcast <abbr title=\"Internet Protocol Version 4\">IPv4</abbr>"
+
+#~ msgid "<abbr title=\"Internet Protocol Version 6\">IPv6</abbr>-Address"
+#~ msgstr "Adreça <abbr title=\"Internet Protocol Version 6\">IPv6</abbr>"
+
+#~ msgid ""
+#~ "The network ports on your router can be combined to several <abbr title="
+#~ "\"Virtual Local Area Network\">VLAN</abbr>s in which computers can "
+#~ "communicate directly with each other. <abbr title=\"Virtual Local Area "
+#~ "Network\">VLAN</abbr>s are often used to separate different network "
+#~ "segments. Often there is by default one Uplink port for a connection to "
+#~ "the next greater network like the internet and other ports for a local "
+#~ "network."
+#~ msgstr ""
+#~ "Els ports de xarxa del teu router es poden combinar amb diverses <abbr "
+#~ "title=\"Virtual Local Area Network\">VLAN</abbr>s en les que els "
+#~ "ordinador es poden comunicar directament entre ells. Les <abbr title="
+#~ "\"Virtual Local Area Network\">VLAN</abbr>s es fan servir normalment per "
+#~ "separar segments de xarxa diferents. Normalment, hi ha un port de Pujada "
+#~ "per defecte per la següent xarxa major, com Internet, i altres ports per "
+#~ "una xarxa local."
 
 #~ msgid "Files to be kept when flashing a new firmware"
 #~ msgstr "Fitxers a guardar quan s&#39;actualitzi un nou firmware"
@@ -3163,7 +3360,7 @@ msgstr ""
 
 #~ msgid ""
 #~ "<abbr title=\"maximal\">max.</abbr> <abbr title=\"Extension Mechanisms "
-#~ "for Domain Name System\">EDNS0</abbr> paket size"
+#~ "for Domain Name System\">EDNS0</abbr> packet size"
 #~ msgstr ""
 #~ "<abbr title=\"màxima\">max.</abbr> mida de paquet <abbr title=\"Extension "
 #~ "Mechanisms for Domain Name System\">EDNS0</abbr>"
