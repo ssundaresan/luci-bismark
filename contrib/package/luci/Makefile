@@ -464,6 +464,30 @@ $(eval $(call application,transmission,LuCI Support for Transmission,\
 $(eval $(call application,watchcat,LuCI Support for Watchcat,\
 	+PACKAGE_luci-app-watchcat:watchcat))
 
+### luci-bismark ###
+
+$(eval $(call application,bismark-experiments-manager,Bismark experiments manager,+bismark-experiments-manager))
+define Package/luci-app-bismark-experiments-manager/postinst
+#!/bin/sh
+rm -f /tmp/luci-indexcache
+endef
+define Package/luci-app-bismark-experiments-manager/prerm
+#!/bin/sh
+rm -f /tmp/luci-indexcache
+endef
+
+$(eval $(call application,bismark-passive,Bismark passive,+bismark-passive))
+define Package/luci-app-bismark-passive/postinst
+#!/bin/sh
+rm -f /tmp/luci-indexcache
+endef
+define Package/luci-app-bismark-passive/prerm
+#!/bin/sh
+rm -f /tmp/luci-indexcache
+endef
+
+### end luci-bismark ###
+
 ### Server Gateway Interfaces ###
 define sgi
   define Package/luci-sgi-$(1)
